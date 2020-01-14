@@ -107,7 +107,8 @@ module Precious
     end
 
     get '/' do
-      redirect clean_url(::File.join(@base_url, @page_dir, wiki_new.index_page))
+      #redirect clean_url(::File.join(@base_url, @page_dir, wiki_new.index_page))
+      redirect clean_url(::File.join(@base_url, 'preview', 'index'))
     end
 
     # path is set to name if path is nil.
